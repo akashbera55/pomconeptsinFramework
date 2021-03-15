@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests" verbose="3">
+
+<!-- Start First Test -->
+
+  <test name="my hubspot test chrome" parallel="methods" thread-count="5">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.MyTests.LoginTest"/>
+    </classes>
+  </test>  
+  
+  <test name="my hubspot test firefox" parallel="methods" thread-count="5">
+  <parameter name="browser" value="ff"></parameter>
+    <classes>
+      <class name="com.MyTests.LoginTest"/>
+    </classes>
+  </test>  
+</suite> <!-- Suite -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="ff"/>
+  <test thread-count="5" name="my hubspot test firefox" parallel="methods">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="com.MyTests.LoginTest"/>
+    </classes>
+  </test> <!-- my hubspot test firefox -->
+</suite> <!-- Failed suite [Suite] -->
